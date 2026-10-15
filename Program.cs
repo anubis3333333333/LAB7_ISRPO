@@ -7,28 +7,26 @@ namespace Lab07
         static void Main(string[] args)
         {
 
-            //Задание 1.1.
-            string[] days = { "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" };
-            Console.WriteLine("Дни недели в обратном порядке:");
-            for (int i = days.Length - 1; i >= 0; i--)
-            {
-                Console.WriteLine($"{i}: {days[i]}");
-            }
-
-
-            // // Задание 1.2.
-            // double[] temps = { -3.5, 0.2, 4.5, 7.1, -1.0, -5.2, 2.0 };
-            // Console.WriteLine("Температуры за неделю:");
-            // foreach (double t in temps)
+            // //Задание 1.1.
+            // string[] days = { "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" };
+            // Console.WriteLine("Дни недели в обратном порядке:");
+            // for (int i = days.Length - 1; i >= 0; i--)
             // {
-            //     Console.Write(t + " ");
+            //     Console.WriteLine($"{i}: {days[i]}");
             // }
-            // Console.WriteLine();
 
 
-            // ==========================================
-            // Шаг 2. Сумма и среднее
-            // ==========================================
+            // Задание 1.2.
+            double[] temps = { -3.5, 0.2, 4.5, 7.1, -1.0, -5.2, 2.0 };
+            Console.WriteLine("Температуры за неделю:");
+            foreach (double t in temps)
+            {
+                Console.Write(t + " ");
+            }
+            Console.WriteLine();
+
+
+          
 
             // // Задание 2.
             // int[] prices = { 120, 45, 300, 80, 15, 210 };

@@ -16,37 +16,37 @@ namespace Lab07
             // }
 
 
-            // Задание 1.2.
-            double[] temps = { -3.5, 0.2, 4.5, 7.1, -1.0, -5.2, 2.0 };
-            Console.WriteLine("Температуры за неделю:");
-            foreach (double t in temps)
-            {
-                Console.Write(t + " ");
-            }
-            Console.WriteLine();
+            // // Задание 1.2.
+            // double[] temps = { -3.5, 0.2, 4.5, 7.1, -1.0, -5.2, 2.0 };
+            // Console.WriteLine("Температуры за неделю:");
+            // foreach (double t in temps)
+            // {
+            //     Console.Write(t + " ");
+            // }
+            // Console.WriteLine();
 
 
           
 
-            // // Задание 2.
-            // int[] prices = { 120, 45, 300, 80, 15, 210 };
-            // int sum = 0;
-            // int countMoreThan100 = 0;
+            // Задание 2.
+            int[] prices = { 120, 45, 300, 80, 15, 210 };
+            int sum = 0;
+            int countMoreThan100 = 0;
 
-            // foreach (int price in prices)
-            // {
-            //     sum += price;
-            //     if (price > 100)
-            //     {
-            //         countMoreThan100++;
-            //     }
-            // }
+            foreach (int price in prices)
+            {
+                sum += price;
+                if (price > 100)
+                {
+                    countMoreThan100++;
+                }
+            }
 
-            // double average = (double)sum / prices.Length;
+            double average = (double)sum / prices.Length;
 
-            // Console.WriteLine($"Общая сумма цен: {sum}"); // Должно быть 770
-            // Console.WriteLine($"Средняя цена: {average:F2}");
-            // Console.WriteLine($"Количество товаров дороже 100: {countMoreThan100}"); // Должно быть 3
+            Console.WriteLine($"Общая сумма цен: {sum}"); 
+            Console.WriteLine($"Средняя цена: {average:F2}");
+            Console.WriteLine($"Количество товаров дороже 100: {countMoreThan100}");
 
 
             // ==========================================

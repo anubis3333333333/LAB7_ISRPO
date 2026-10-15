@@ -28,51 +28,49 @@ namespace Lab07
 
           
 
-            // Задание 2.
-            int[] prices = { 120, 45, 300, 80, 15, 210 };
-            int sum = 0;
-            int countMoreThan100 = 0;
-
-            foreach (int price in prices)
-            {
-                sum += price;
-                if (price > 100)
-                {
-                    countMoreThan100++;
-                }
-            }
-
-            double average = (double)sum / prices.Length;
-
-            Console.WriteLine($"Общая сумма цен: {sum}"); 
-            Console.WriteLine($"Средняя цена: {average:F2}");
-            Console.WriteLine($"Количество товаров дороже 100: {countMoreThan100}");
-
-
-            // ==========================================
-            // Шаг 3. Минимум и максимум
-            // ==========================================
-
-            // // Задание 3.
+            // // Задание 2.
             // int[] prices = { 120, 45, 300, 80, 15, 210 };
-            // int minPrice = prices[0];
-            // int maxIndex = 0;
+            // int sum = 0;
+            // int countMoreThan100 = 0;
 
-            // for (int i = 1; i < prices.Length; i++)
+            // foreach (int price in prices)
             // {
-            //     if (prices[i] < minPrice)
+            //     sum += price;
+            //     if (price > 100)
             //     {
-            //         minPrice = prices[i];
-            //     }
-                
-            //     if (prices[i] > prices[maxIndex])
-            //     {
-            //         maxIndex = i;
+            //         countMoreThan100++;
             //     }
             // }
 
-            // Console.WriteLine($"Минимальная цена: {minPrice}"); // Должно быть 15
-            // Console.WriteLine($"Индекс самого дорогого товара: {maxIndex}"); // Должно быть 2
+            // double average = (double)sum / prices.Length;
+
+            // Console.WriteLine($"Общая сумма цен: {sum}"); 
+            // Console.WriteLine($"Средняя цена: {average:F2}");
+            // Console.WriteLine($"Количество товаров дороже 100: {countMoreThan100}");
+
+
+            
+
+            // Задание 3.
+            int[] prices = { 120, 45, 300, 80, 15, 210 };
+            int minPrice = prices[0];
+            int maxIndex = 0;
+
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (prices[i] < minPrice)
+                {
+                    minPrice = prices[i];
+                }
+                
+                if (prices[i] > prices[maxIndex])
+                {
+                    maxIndex = i;
+                }
+            }
+
+            Console.WriteLine($"Минимальная цена: {minPrice}"); 
+            Console.WriteLine($"Индекс самого дорогого товара: {maxIndex}"); 
 
 
             // ==========================================

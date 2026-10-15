@@ -26,7 +26,7 @@ namespace Lab07
             // Console.WriteLine();
 
 
-          
+
 
             // // Задание 2.
             // int[] prices = { 120, 45, 300, 80, 15, 210 };
@@ -49,7 +49,7 @@ namespace Lab07
             // Console.WriteLine($"Количество товаров дороже 100: {countMoreThan100}");
 
 
-            
+
 
             // // Задание 3.
             // int[] prices = { 120, 45, 300, 80, 15, 210 };
@@ -62,7 +62,7 @@ namespace Lab07
             //     {
             //         minPrice = prices[i];
             //     }
-                
+
             //     if (prices[i] > prices[maxIndex])
             //     {
             //         maxIndex = i;
@@ -73,7 +73,7 @@ namespace Lab07
             // Console.WriteLine($"Индекс самого дорогого товара: {maxIndex}"); 
 
 
-           
+
 
             // // Задание 4.
             // int[] balance = { 100, -50, 20, -5, 0, 75 };
@@ -94,7 +94,7 @@ namespace Lab07
             // Console.WriteLine();
 
 
-           
+
 
             // // Задание 5. Ввод с клавиатуры
             // int[] userNumbers = new int[5];
@@ -143,70 +143,70 @@ namespace Lab07
             // }
 
 
-            
+
             // Журнал Оценок
-            
-            int[] grades = { 5, 4, 3, 2, 5, 4, 5, 3 }; 
 
-            Console.Write("Все оценки: ");
-            foreach (int grade in grades)
-            {
-                Console.Write(grade + " ");
-            }
-            Console.WriteLine();
+            // int[] grades = { 5, 4, 3, 2, 5, 4, 5, 3 }; 
 
-            int totalSum = 0;
-            int minGrade = grades[0];
-            int maxGrade = grades[0];
-            int countTwos = 0;
-            int countFives = 0;
-
-            foreach (int grade in grades)
-            {
-                totalSum += grade;
-                
-                if (grade < minGrade) minGrade = grade;
-                if (grade > maxGrade) maxGrade = grade;
-                
-                if (grade == 2) countTwos++;
-                if (grade == 5) countFives++;
-            }
-
-            double avgGrade = (double)totalSum / grades.Length;
-
-            Console.WriteLine($"Средняя оценка: {avgGrade:F2}");
-            Console.WriteLine($"Наибольшая оценка: {maxGrade}");
-            Console.WriteLine($"Наименьшая оценка: {minGrade}");
-            Console.WriteLine($"Количество двоек: {countTwos}");
-            Console.WriteLine($"Количество пятерок: {countFives}");
-
-            if (avgGrade >= 4.5)
-                Console.WriteLine("Статус: Отличник");
-            else if (avgGrade >= 3.5)
-                Console.WriteLine("Статус: Хорошист");
-            else
-                Console.WriteLine("Статус: Есть над чем поработать");
-
-
-            // ==========================================
-            // Дополнительное задание ★★★
-            // ==========================================
-
-            // int[] arr = { 1, 2, 3, 4, 5, 6 };
-            // Console.Write("Исходный массив: ");
-            // foreach (int n in arr) Console.Write(n + " ");
+            // Console.Write("Все оценки: ");
+            // foreach (int grade in grades)
+            // {
+            //     Console.Write(grade + " ");
+            // }
             // Console.WriteLine();
 
-            // for (int i = 0; i < arr.Length / 2; i++)
+            // int totalSum = 0;
+            // int minGrade = grades[0];
+            // int maxGrade = grades[0];
+            // int countTwos = 0;
+            // int countFives = 0;
+
+            // foreach (int grade in grades)
             // {
-            //     int temp = arr[i];
-            //     arr[i] = arr[arr.Length - 1 - i];
-            //     arr[arr.Length - 1 - i] = temp;
+            //     totalSum += grade;
+
+            //     if (grade < minGrade) minGrade = grade;
+            //     if (grade > maxGrade) maxGrade = grade;
+
+            //     if (grade == 2) countTwos++;
+            //     if (grade == 5) countFives++;
             // }
 
-            // Console.Write("Развернутый на месте: ");
-            // foreach (int n in arr) Console.Write(n + " ");
-            // Console.WriteLine();
+            // double avgGrade = (double)totalSum / grades.Length;
+
+            // Console.WriteLine($"Средняя оценка: {avgGrade:F2}");
+            // Console.WriteLine($"Наибольшая оценка: {maxGrade}");
+            // Console.WriteLine($"Наименьшая оценка: {minGrade}");
+            // Console.WriteLine($"Количество двоек: {countTwos}");
+            // Console.WriteLine($"Количество пятерок: {countFives}");
+
+            // if (avgGrade >= 4.5)
+            //     Console.WriteLine("Статус: Отличник");
+            // else if (avgGrade >= 3.5)
+            //     Console.WriteLine("Статус: Хорошист");
+            // else
+            //     Console.WriteLine("Статус: Есть над чем поработать");
+
+
+
+            //Дополнительное задание 
+
+
+            int[] arr = { 1, 2, 3, 4, 5, 6 };
+            Console.Write("Исходный массив: ");
+            foreach (int n in arr) Console.Write(n + " ");
+            Console.WriteLine();
+
+            for (int i = 0; i < arr.Length / 2; i++)
+            {
+                int temp = arr[i];
+                arr[i] = arr[arr.Length - 1 - i];
+                arr[arr.Length - 1 - i] = temp;
+            }
+
+            Console.Write("Развернутый на месте: ");
+            foreach (int n in arr) Console.Write(n + " ");
+            Console.WriteLine();
         }
     }
 }

@@ -75,49 +75,47 @@ namespace Lab07
 
            
 
-            // Задание 4.
-            int[] balance = { 100, -50, 20, -5, 0, 75 };
+            // // Задание 4.
+            // int[] balance = { 100, -50, 20, -5, 0, 75 };
 
-            for (int i = 0; i < balance.Length; i++)
-            {
-                if (balance[i] < 0)
-                {
-                    balance[i] = 0;
-                }
-            }
-
-            Console.WriteLine("Массив после замены отрицательных элементов на 0:");
-            foreach (int val in balance)
-            {
-                Console.Write(val + " ");
-            }
-            Console.WriteLine();
-
-
-            // ==========================================
-            // Самостоятельные задания
-            // ==========================================
-
-            // // Задание 5. Ввод с клавиатуры
-            // int[] userNumbers = new int[5];
-            // Console.WriteLine("Введите 5 целых чисел:");
-            // for (int i = 0; i < userNumbers.Length; i++)
+            // for (int i = 0; i < balance.Length; i++)
             // {
-            //     Console.Write($"Элемент {i}: ");
-            //     userNumbers[i] = int.Parse(Console.ReadLine());
-            // }
-
-            // int evenCount = 0;
-            // Console.WriteLine("Массив в обратном порядке:");
-            // for (int i = userNumbers.Length - 1; i >= 0; i--)
-            // {
-            //     Console.Write(userNumbers[i] + " ");
-            //     if (userNumbers[i] % 2 == 0)
+            //     if (balance[i] < 0)
             //     {
-            //         evenCount++;
+            //         balance[i] = 0;
             //     }
             // }
-            // Console.WriteLine($"\nКоличество чётных чисел: {evenCount}");
+
+            // Console.WriteLine("Массив после замены отрицательных элементов на 0:");
+            // foreach (int val in balance)
+            // {
+            //     Console.Write(val + " ");
+            // }
+            // Console.WriteLine();
+
+
+           
+
+            // Задание 5. Ввод с клавиатуры
+            int[] userNumbers = new int[5];
+            Console.WriteLine("Введите 5 целых чисел:");
+            for (int i = 0; i < userNumbers.Length; i++)
+            {
+                Console.Write($"Элемент {i}: ");
+                userNumbers[i] = int.Parse(Console.ReadLine());
+            }
+
+            int evenCount = 0;
+            Console.WriteLine("Массив в обратном порядке:");
+            for (int i = userNumbers.Length - 1; i >= 0; i--)
+            {
+                Console.Write(userNumbers[i] + " ");
+                if (userNumbers[i] % 2 == 0)
+                {
+                    evenCount++;
+                }
+            }
+            Console.WriteLine($"\nКоличество чётных чисел: {evenCount}");
 
 
             // // Задание 6. Поиск по имени

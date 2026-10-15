@@ -51,49 +51,47 @@ namespace Lab07
 
             
 
-            // Задание 3.
-            int[] prices = { 120, 45, 300, 80, 15, 210 };
-            int minPrice = prices[0];
-            int maxIndex = 0;
+            // // Задание 3.
+            // int[] prices = { 120, 45, 300, 80, 15, 210 };
+            // int minPrice = prices[0];
+            // int maxIndex = 0;
 
-            for (int i = 1; i < prices.Length; i++)
-            {
-                if (prices[i] < minPrice)
-                {
-                    minPrice = prices[i];
-                }
-                
-                if (prices[i] > prices[maxIndex])
-                {
-                    maxIndex = i;
-                }
-            }
-
-            Console.WriteLine($"Минимальная цена: {minPrice}"); 
-            Console.WriteLine($"Индекс самого дорогого товара: {maxIndex}"); 
-
-
-            // ==========================================
-            // Шаг 4. Изменение элементов
-            // ==========================================
-
-            // // Задание 4.
-            // int[] balance = { 100, -50, 20, -5, 0, 75 };
-
-            // for (int i = 0; i < balance.Length; i++)
+            // for (int i = 1; i < prices.Length; i++)
             // {
-            //     if (balance[i] < 0)
+            //     if (prices[i] < minPrice)
             //     {
-            //         balance[i] = 0;
+            //         minPrice = prices[i];
+            //     }
+                
+            //     if (prices[i] > prices[maxIndex])
+            //     {
+            //         maxIndex = i;
             //     }
             // }
 
-            // Console.WriteLine("Массив после замены отрицательных элементов на 0:");
-            // foreach (int val in balance)
-            // {
-            //     Console.Write(val + " ");
-            // }
-            // Console.WriteLine();
+            // Console.WriteLine($"Минимальная цена: {minPrice}"); 
+            // Console.WriteLine($"Индекс самого дорогого товара: {maxIndex}"); 
+
+
+           
+
+            // Задание 4.
+            int[] balance = { 100, -50, 20, -5, 0, 75 };
+
+            for (int i = 0; i < balance.Length; i++)
+            {
+                if (balance[i] < 0)
+                {
+                    balance[i] = 0;
+                }
+            }
+
+            Console.WriteLine("Массив после замены отрицательных элементов на 0:");
+            foreach (int val in balance)
+            {
+                Console.Write(val + " ");
+            }
+            Console.WriteLine();
 
 
             // ==========================================

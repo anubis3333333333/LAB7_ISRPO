@@ -118,76 +118,74 @@ namespace Lab07
             // Console.WriteLine($"\nКоличество чётных чисел: {evenCount}");
 
 
-            // Задание 6. Поиск по имени
-            string[] names = { "Анна", "Игорь", "Мария", "Олег", "Ольга" };
-            Console.Write("Введите имя для поиска: ");
-            string searchName = Console.ReadLine();
-            int position = -1;
+            // // Задание 6. Поиск по имени
+            // string[] names = { "Анна", "Игорь", "Мария", "Олег", "Ольга" };
+            // Console.Write("Введите имя для поиска: ");
+            // string searchName = Console.ReadLine();
+            // int position = -1;
 
-            for (int i = 0; i < names.Length; i++)
-            {
-                if (names[i].Equals(searchName, StringComparison.OrdinalIgnoreCase))
-                {
-                    position = i;
-                    break;
-                }
-            }
-
-            if (position != -1)
-            {
-                Console.WriteLine($"Имя найдено на позиции: {position}");
-            }
-            else
-            {
-                Console.WriteLine("Не найдено");
-            }
-
-
-            // ==========================================
-            // Итоговая задача. «Журнал оценок»
-            // ==========================================
-
-            // // Раскомментируйте этот блок перед запуском для финального скриншота!
-            // int[] grades = { 5, 4, 3, 2, 5, 4, 5, 3 }; // Можно задать в коде или ввести через цикл
-
-            // Console.Write("Все оценки: ");
-            // foreach (int grade in grades)
+            // for (int i = 0; i < names.Length; i++)
             // {
-            //     Console.Write(grade + " ");
-            // }
-            // Console.WriteLine();
-
-            // int totalSum = 0;
-            // int minGrade = grades[0];
-            // int maxGrade = grades[0];
-            // int countTwos = 0;
-            // int countFives = 0;
-
-            // foreach (int grade in grades)
-            // {
-            //     totalSum += grade;
-                
-            //     if (grade < minGrade) minGrade = grade;
-            //     if (grade > maxGrade) maxGrade = grade;
-                
-            //     if (grade == 2) countTwos++;
-            //     if (grade == 5) countFives++;
+            //     if (names[i].Equals(searchName, StringComparison.OrdinalIgnoreCase))
+            //     {
+            //         position = i;
+            //         break;
+            //     }
             // }
 
-            // double avgGrade = (double)totalSum / grades.Length;
-
-            // Console.WriteLine($"Средняя оценка: {avgGrade:F2}");
-            // Console.WriteLine($"Наибольшая оценка: {maxGrade}");
-            // Console.WriteLine($"Наименьшая оценка: {minGrade}");
-            // Console.WriteLine($"Количество двоек: {countTwos}");
-            // Console.WriteLine($"Количество пятерок: {countFives}");
-
-            // if (avgGrade >= 4.5)
-            //     Console.WriteLine("Статус: Отличник");
-            // else if (avgGrade >= 3.5)
-            //     Console.WriteLine("Статус: Хорошист");
+            // if (position != -1)
+            // {
+            //     Console.WriteLine($"Имя найдено на позиции: {position}");
+            // }
             // else
-            //     Console.WriteLine("Статус: Есть над чем поработать");
+            // {
+            //     Console.WriteLine("Не найдено");
+            // }
+
+
+            
+            // Журнал Оценок
+            
+            int[] grades = { 5, 4, 3, 2, 5, 4, 5, 3 }; 
+
+            Console.Write("Все оценки: ");
+            foreach (int grade in grades)
+            {
+                Console.Write(grade + " ");
+            }
+            Console.WriteLine();
+
+            int totalSum = 0;
+            int minGrade = grades[0];
+            int maxGrade = grades[0];
+            int countTwos = 0;
+            int countFives = 0;
+
+            foreach (int grade in grades)
+            {
+                totalSum += grade;
+                
+                if (grade < minGrade) minGrade = grade;
+                if (grade > maxGrade) maxGrade = grade;
+                
+                if (grade == 2) countTwos++;
+                if (grade == 5) countFives++;
+            }
+
+            double avgGrade = (double)totalSum / grades.Length;
+
+            Console.WriteLine($"Средняя оценка: {avgGrade:F2}");
+            Console.WriteLine($"Наибольшая оценка: {maxGrade}");
+            Console.WriteLine($"Наименьшая оценка: {minGrade}");
+            Console.WriteLine($"Количество двоек: {countTwos}");
+            Console.WriteLine($"Количество пятерок: {countFives}");
+
+            if (avgGrade >= 4.5)
+                Console.WriteLine("Статус: Отличник");
+            else if (avgGrade >= 3.5)
+                Console.WriteLine("Статус: Хорошист");
+            else
+                Console.WriteLine("Статус: Есть над чем поработать");
 
 
             // ==========================================

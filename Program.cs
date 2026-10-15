@@ -96,51 +96,51 @@ namespace Lab07
 
            
 
-            // Задание 5. Ввод с клавиатуры
-            int[] userNumbers = new int[5];
-            Console.WriteLine("Введите 5 целых чисел:");
-            for (int i = 0; i < userNumbers.Length; i++)
-            {
-                Console.Write($"Элемент {i}: ");
-                userNumbers[i] = int.Parse(Console.ReadLine());
-            }
-
-            int evenCount = 0;
-            Console.WriteLine("Массив в обратном порядке:");
-            for (int i = userNumbers.Length - 1; i >= 0; i--)
-            {
-                Console.Write(userNumbers[i] + " ");
-                if (userNumbers[i] % 2 == 0)
-                {
-                    evenCount++;
-                }
-            }
-            Console.WriteLine($"\nКоличество чётных чисел: {evenCount}");
-
-
-            // // Задание 6. Поиск по имени
-            // string[] names = { "Анна", "Игорь", "Мария", "Олег", "Ольга" };
-            // Console.Write("Введите имя для поиска: ");
-            // string searchName = Console.ReadLine();
-            // int position = -1;
-
-            // for (int i = 0; i < names.Length; i++)
+            // // Задание 5. Ввод с клавиатуры
+            // int[] userNumbers = new int[5];
+            // Console.WriteLine("Введите 5 целых чисел:");
+            // for (int i = 0; i < userNumbers.Length; i++)
             // {
-            //     if (names[i].Equals(searchName, StringComparison.OrdinalIgnoreCase))
+            //     Console.Write($"Элемент {i}: ");
+            //     userNumbers[i] = int.Parse(Console.ReadLine());
+            // }
+
+            // int evenCount = 0;
+            // Console.WriteLine("Массив в обратном порядке:");
+            // for (int i = userNumbers.Length - 1; i >= 0; i--)
+            // {
+            //     Console.Write(userNumbers[i] + " ");
+            //     if (userNumbers[i] % 2 == 0)
             //     {
-            //         position = i;
-            //         break;
+            //         evenCount++;
             //     }
             // }
+            // Console.WriteLine($"\nКоличество чётных чисел: {evenCount}");
 
-            // if (position != -1)
-            // {
-            //     Console.WriteLine($"Имя найдено на позиции: {position}");
-            // }
-            // else
-            // {
-            //     Console.WriteLine("Не найдено");
-            // }
+
+            // Задание 6. Поиск по имени
+            string[] names = { "Анна", "Игорь", "Мария", "Олег", "Ольга" };
+            Console.Write("Введите имя для поиска: ");
+            string searchName = Console.ReadLine();
+            int position = -1;
+
+            for (int i = 0; i < names.Length; i++)
+            {
+                if (names[i].Equals(searchName, StringComparison.OrdinalIgnoreCase))
+                {
+                    position = i;
+                    break;
+                }
+            }
+
+            if (position != -1)
+            {
+                Console.WriteLine($"Имя найдено на позиции: {position}");
+            }
+            else
+            {
+                Console.WriteLine("Не найдено");
+            }
 
 
             // ==========================================
